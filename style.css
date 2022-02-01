@@ -1,23 +1,22 @@
 * {
-  background-color: #007A98;
+  background-color: #CBF5F9;
 }
 
 #header-title {
   width: 100%;
   text-align: center;
-  color: #338B99;
+  color: #CBF5F9;
   font-size: 35px;
   font-weight: 700;
   letter-spacing: 4px;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Kanit', sans-serif;
   position: fixed;
   top: 0px;
   left: 0px;
-  border-bottom: 3px solid #130A2B;
   margin-top: 0px;
   padding-top: 15px;
   padding-bottom: 15px;
-  background-image: linear-gradient(to right, #130A61, #991F6B);
+  background-image: linear-gradient(to right, #71ABD1, #D983E4);
 }
 
 div.lol{
@@ -46,15 +45,15 @@ div.preview {
 div.our-team {
   display: flex;
   justify-content: center;
-  border-top: 1px solid black;
+  border-top: 1px solid #9B47EF;
 }
 
 #our-team {
-  color: black;
+  color: #71ABD1;
   font-size: 30px;
   font-weight: 700;
   letter-spacing: 2px;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Alegreya Sans SC', sans-serif;
   padding-top: 20px;
 }
 
@@ -63,7 +62,7 @@ div.team {
   justify-content: center;
   flex-flow: row wrap;
   padding-bottom: 45px;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #9B47EF;
 }
 
 div.member {
@@ -77,7 +76,7 @@ div.member {
 #team-member {
   padding: 2%;
   margin: 3%;
-  border: 2px solid #130A2B;
+  border: 2px solid #71ABD1;
   height: 70%;
   width: 70%;
 }
@@ -85,27 +84,27 @@ div.member {
 div.description {
   justify-content: center;
   margin: auto;
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
+  border-top: 1px solid #9B47EF;
+  border-bottom: 1px solid #9B47EF;
 }
 
 #our-game {
-  color: black;
+  color: #71ABD1;
   font-size: 40px;
   font-weight: 700;
   letter-spacing: 4px;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Alegreya Sans SC', sans-serif;
   text-align: center;
   margin-top: 100px;
   width: 100%;
 }
 
 #description {
-  color: black;
+  color: #71ABD1;
   font-size: 20px;
   font-weight: 350;
   letter-spacing: 2px;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Hind Vadodara', sans-serif;
   text-align: center;
   padding-bottom: 45px;
 }
@@ -130,23 +129,21 @@ div.description {
 .info,
 .contact {
   text-align: center;
-  color: black;
+  color: #71ABD1;
   font-size: 20px;
   font-weight: 350;
   letter-spacing: 2px;
-  font-family: 'Raleway', sans-serif;
-  
+  font-family: 'Kanit', sans-serif;
 }
 
 #footer-menu,
 #footer-info,
 #footer-contact {
-  color: black;
+  color: #71ABD1;
   font-size: 20px;
   font-weight: 700;
   letter-spacing: 2px;
-  font-family: 'Raleway', sans-serif;
-  
+  font-family: 'Kanit', sans-serif;
 }
 
 #instagram-icon {
@@ -165,22 +162,22 @@ div.description {
 }
 
 a:link {
-  color: #991F6B;
+  color: #DE90C5;
   text-decoration: none;
 }
 
 a:visited {
-  color: #991F6B;
+  color: #DE90C5;
   text-decoration: none;
 }
 
 a:hover {
-  color: #130A61;
+  color: #DE90C5;
   text-decoration: none;
 }
 
 a:active {
-  color: #338B99;
+  color: #DE90C5;
   text-decoration: none;
 }
 
@@ -190,7 +187,7 @@ a:active {
   flex-flow: row wrap;
   padding-bottom: 45px;
   padding-top: 45px;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #9B47EF;
 }
 
 .gallery-img {
@@ -207,7 +204,6 @@ a:active {
   height: 95%;
   width: 95%;
 }
-
 
 .slidershow{
   width: 700px;
@@ -240,8 +236,8 @@ a:active {
 }
 
 input[name="r"]{
-    position: absolute;
-    visibility: hidden;
+  position: absolute;
+  visibility: hidden;
 }
 
 .slides{
@@ -274,4 +270,3 @@ input[name="r"]{
 #r5:checked ~ .s1{
   margin-left: -80%;
 }
-
