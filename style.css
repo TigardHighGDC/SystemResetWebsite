@@ -108,7 +108,7 @@ div.description {
 }
 
 .footer {
-  position: relative;
+  position: static;
   text-align: center;
 }
 
