@@ -61,6 +61,7 @@ div.team {
   flex-flow: row wrap;
   padding-bottom: 45px;
   border-bottom: 1px solid #9B47EF;
+  z-index: -1;
 }
 
 div.member {
@@ -69,6 +70,7 @@ div.member {
   text-align: center;
   height: 15%;
   width: 15%;
+  z-index: -1;
 }
 
 #team-member {
@@ -207,6 +209,7 @@ a:active {
   width: 700px;
   height: 400px;
   overflow: hidden;
+  z-index: -1;
 }
 .center{
   position: absolute;
