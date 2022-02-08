@@ -15,6 +15,7 @@
   padding-top: 15px;
   padding-bottom: 15px;
   background-image: linear-gradient(to right, #71ABD1, #D983E4);
+    z-index: 3;
 }
 
 div.lol{
@@ -61,7 +62,6 @@ div.team {
   flex-flow: row wrap;
   padding-bottom: 45px;
   border-bottom: 1px solid #9B47EF;
-  z-index: -1;
 }
 
 div.member {
@@ -70,7 +70,6 @@ div.member {
   text-align: center;
   height: 15%;
   width: 15%;
-  z-index: -1;
 }
 
 #team-member {
@@ -134,6 +133,7 @@ div.description {
   font-weight: 350;
   letter-spacing: 2px;
   font-family: 'Kanit', sans-serif;
+
 }
 
 #footer-menu,
@@ -144,6 +144,7 @@ div.description {
   font-weight: 700;
   letter-spacing: 2px;
   font-family: 'Kanit', sans-serif;
+    z-index: 1;
 }
 
 #instagram-icon {
@@ -209,7 +210,7 @@ a:active {
   width: 700px;
   height: 400px;
   overflow: hidden;
-  z-index: -1;
+  z-index: 0;
 }
 .center{
   position: absolute;
@@ -270,4 +271,8 @@ input[name="r"]{
 }
 #r5:checked ~ .s1{
   margin-left: -80%;
+}
+
+.contact-profiles {
+  flex-flow: row wrap;
 }
