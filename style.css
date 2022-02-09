@@ -276,3 +276,8 @@ input[name="r"]{
 .contact-profiles {
   flex-flow: row wrap;
 }
+
+#picture-portrait {
+  height: 200px;
+  width: 200px;
+}
