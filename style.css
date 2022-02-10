@@ -23,7 +23,7 @@ div.lol{
   justify-content: center;
   text-align: center;
   width: 200px;
-  height: 315px;
+  height: 407px;
   padding-top: 115px;
   padding-bottom: 45px;
 }
@@ -207,8 +207,8 @@ a:active {
 }
 
 .slidershow{
-  width: 700px;
-  height: 400px;
+  width: 1050px;
+  height: 600px;
   overflow: hidden;
   z-index: 0;
 }
@@ -298,8 +298,11 @@ input[name="r"]{
 
 .personal-contact-info {
   font-family: 'Hind Vadodara', sans-serif;
-  max-width: 1500px;
+  max-width: 1300px;
+  width: 1300px;
+  padding-left: 10px;
+  padding-right: 10px;
   text-align: center;
   float: right;
-  transform: translate(0, -1075px);
+  transform: translate(0, -440px);
 }
