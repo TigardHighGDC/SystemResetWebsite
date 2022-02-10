@@ -277,7 +277,29 @@ input[name="r"]{
   flex-flow: row wrap;
 }
 
+.person-contact {
+  padding: 20px 40px 40px;
+}
+
 #picture-portrait {
-  height: 200px;
-  width: 200px;
+  height: 300px;
+  width: 300px;
+  padding-top: 100px;
+  margin: 30px 30px 30px 0;
+  float: left;
+}
+
+#contact-profiles-name {
+  font-family: 'Kanit', sans-serif;
+  font-size: 50px;
+  width: 125px;
+  text-align: center;
+}
+
+.personal-contact-info {
+  font-family: 'Hind Vadodara', sans-serif;
+  max-width: 1500px;
+  text-align: center;
+  float: right;
+  transform: translate(0, -1075px);
 }
