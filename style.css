@@ -276,3 +276,8 @@ input[name="r"]{
 #r5:checked ~ .s1{
   margin-left: -80%;
 }
+
+#webgl_iframe {
+  padding-top: 75px;
+
+}
