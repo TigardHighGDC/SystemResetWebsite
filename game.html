@@ -1,51 +1,107 @@
 <!DOCTYPE html>
-<html>
-
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width">
-	<title>System Reset</title>
-	<link href="style.css" rel="stylesheet" type="text/css" />
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@500&family=Hind+Vadodara&family=Kanit:wght@700&display=swap"
-	 rel="stylesheet">
-</head>
-
-<body>
-  <header>
-		<p id='header-title'>SYSTEM RESET</p>
-	</header>
-
-  <iframe id="webgl_iframe" frameborder="0" allow="autoplay; fullscreen; vr" allowfullscreen="" allowvr="" mozallowfullscreen="true" src="https://play.unity3dusercontent.com/webgl/5350b7f7-2d67-4f38-9298-667a045d4338?screenshot=true&amp;embedType=detail" width="100%" height="580" onmousewheel="" webkitallowfullscreen="true"></iframe>
-
-  <footer class='footer'>
-    <div id='footer-container' class='flex-row'>
-      <div class='menu flex-col'>
-        <h4 id='footer-menu'>MENU</h4>
-        <div id='menu-list'>
-          <p class='footer-btn'><a href='index.html' class='btn btn-1'>HOME</a></p>
-          <p class='footer-btn'><a href='game.html' class='btn btn-1'>GAME</a></p>
-        </div>
-      </div> 
-      <div class='info flex-col'>
-        <h4 id='footer-info'>INFO</h4>
-        <div id='info-list'>
-          <p class='footer-btn'><a href='gameLore.html' class='btn btn-1'>LORE</a></p>
-          <p class='footer-btn'></p><a href='faq.html' class='btn btn-1'>FAQ's</a></p>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | System Reset</title>
+    <link rel="shortcut icon" href="TemplateData/favicon.ico">
+    <link rel="stylesheet" href="TemplateData/style.css">
+  </head>
+  <body>
+    <div id="unity-container" class="unity-desktop">
+      <canvas id="unity-canvas" width=960 height=600></canvas>
+      <div id="unity-loading-bar">
+        <div id="unity-logo"></div>
+        <div id="unity-progress-bar-empty">
+          <div id="unity-progress-bar-full"></div>
         </div>
       </div>
-      <div class='contact flex-col'>
-        <h4 id='footer-contact'>CONTACT</h4>
-        <div id='contact-list'>
-          <p class='footer-btn'><a href='contact.html' class='btn btn-1'>CONTACT</a></p>
-          <p class='footer-btn'><a href='https://www.instagram.com/nofreelnch/?utm_medium=copy_link' target="_blank"><img id='instagram-icon' src='https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Black_Instagram_icon.svg/2048px-Black_Instagram_icon.svg.png'/></a></p>
-          <p class='footer-btn'><a href='https://twitter.com/j4mo0' target="_blank"><img id='twitter-icon' src='https://www.stanthonyshs.org/wp-content/uploads/2018/01/black-and-white-twitter-logo-transparent_100736.png'/></a></p>
-        </div>
+      <div id="unity-warning"> </div>
+      <div id="unity-footer">
+        <div id="unity-webgl-logo"></div>
+        <div id="unity-fullscreen-button"></div>
+        <div id="unity-build-title">System Reset</div>
       </div>
     </div>
-  </footer>
-    
-    <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
-    <script src="./darkModeScript.js"></script>
-</body>
+    <script>
+      var container = document.querySelector("#unity-container");
+      var canvas = document.querySelector("#unity-canvas");
+      var loadingBar = document.querySelector("#unity-loading-bar");
+      var progressBarFull = document.querySelector("#unity-progress-bar-full");
+      var fullscreenButton = document.querySelector("#unity-fullscreen-button");
+      var warningBanner = document.querySelector("#unity-warning");
+
+      // Shows a temporary message banner/ribbon for a few seconds, or
+      // a permanent error message on top of the canvas if type=='error'.
+      // If type=='warning', a yellow highlight color is used.
+      // Modify or remove this function to customize the visually presented
+      // way that non-critical warnings and error messages are presented to the
+      // user.
+      function unityShowBanner(msg, type) {
+        function updateBannerVisibility() {
+          warningBanner.style.display = warningBanner.children.length ? 'block' : 'none';
+        }
+        var div = document.createElement('div');
+        div.innerHTML = msg;
+        warningBanner.appendChild(div);
+        if (type == 'error') div.style = 'background: red; padding: 10px;';
+        else {
+          if (type == 'warning') div.style = 'background: yellow; padding: 10px;';
+          setTimeout(function() {
+            warningBanner.removeChild(div);
+            updateBannerVisibility();
+          }, 5000);
+        }
+        updateBannerVisibility();
+      }
+
+      var buildUrl = "Build";
+      var loaderUrl = buildUrl + "/SystenResetWebBuild.loader.js";
+      var config = {
+        dataUrl: buildUrl + "/SystenResetWebBuild.data",
+        frameworkUrl: buildUrl + "/SystenResetWebBuild.framework.js",
+        codeUrl: buildUrl + "/SystenResetWebBuild.wasm",
+        streamingAssetsUrl: "StreamingAssets",
+        companyName: "DefaultCompany",
+        productName: "System Reset",
+        productVersion: "0.1",
+        showBanner: unityShowBanner,
+      };
+
+      // By default Unity keeps WebGL canvas render target size matched with
+      // the DOM size of the canvas element (scaled by window.devicePixelRatio)
+      // Set this to false if you want to decouple this synchronization from
+      // happening inside the engine, and you would instead like to size up
+      // the canvas DOM size and WebGL render target sizes yourself.
+      // config.matchWebGLToCanvasSize = false;
+
+      if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
+        container.className = "unity-mobile";
+        // Avoid draining fillrate performance on mobile devices,
+        // and default/override low DPI mode on mobile browsers.
+        config.devicePixelRatio = 1;
+        unityShowBanner('WebGL builds are not supported on mobile devices.');
+      } else {
+        canvas.style.width = "960px";
+        canvas.style.height = "600px";
+      }
+      loadingBar.style.display = "block";
+
+      var script = document.createElement("script");
+      script.src = loaderUrl;
+      script.onload = () => {
+        createUnityInstance(canvas, config, (progress) => {
+          progressBarFull.style.width = 100 * progress + "%";
+        }).then((unityInstance) => {
+          loadingBar.style.display = "none";
+          fullscreenButton.onclick = () => {
+            unityInstance.SetFullscreen(1);
+          };
+        }).catch((message) => {
+          alert(message);
+        });
+      };
+      document.body.appendChild(script);
+    </script>
+  </body>
+</html>
