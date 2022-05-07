@@ -302,3 +302,21 @@ input[name="r"]{
 .footer-btn {
   margin: 25px;
 }
+
+body.game-page {
+  margin: 0px;
+  height: 100%;
+}
+
+.game {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+}
+
+#game {
+  height: 100%;
+  width: 100%;
+}
