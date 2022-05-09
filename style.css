@@ -54,6 +54,11 @@ div.our-peeps {
   padding-top: 20px;
 }
 
+.grouped-members {
+  border-top: 1px solid #9B47EF;
+  border-bottom: 1px solid #9B47EF;
+}
+
 div.team {
   display: flex;
   justify-content: center;
@@ -66,8 +71,7 @@ div.member {
   vertical-align: top;
   display: inline-block;
   text-align: center;
-  height: 14%;
-  width: 14%;
+  width: 33%;
 }
 
 #team-member {
@@ -301,22 +305,4 @@ input[name="r"]{
 
 .footer-btn {
   margin: 25px;
-}
-
-body.game-page {
-  margin: 0px;
-  height: 100%;
-}
-
-.game {
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-}
-
-#game {
-  height: 100%;
-  width: 100%;
 }
