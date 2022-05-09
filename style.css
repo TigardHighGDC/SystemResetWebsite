@@ -91,6 +91,7 @@ div.description {
 }
 
 #description {
+  z-index: 1;
   color: #71ABD1;
   font-size: 20px;
   font-weight: 350;
@@ -138,11 +139,6 @@ div.description {
   font-weight: 700;
   letter-spacing: 2px;
   font-family: 'Kanit', sans-serif;
-}
-
-#instagram-icon {
-  height: 25px;
-  width: 25px;
 }
 
 
