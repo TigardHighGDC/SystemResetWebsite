@@ -42,7 +42,6 @@ div.preview {
 div.our-peeps {
   display: flex;
   justify-content: center;
-  border-top: 1px solid #9B47EF;
 }
 
 #our-peeps {
