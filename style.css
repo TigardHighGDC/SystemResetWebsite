@@ -98,6 +98,8 @@ div.description {
   font-family: 'Hind Vadodara', sans-serif;
   text-align: center;
   padding-bottom: 45px;
+  padding-right: 7.5%;
+  padding-left: 7.5%;
 }
 
 .footer {
@@ -146,6 +148,12 @@ div.description {
 
 .caption {
   display: block;
+  color: #71ABD1;
+  font-size: 20px;
+  font-weight: 350;
+  letter-spacing: .5px;
+  font-family: 'Hind Vadodara', sans-serif;
+  text-align: center;
 }
 
 a:link {
