@@ -52,6 +52,7 @@ div.our-peeps {
   letter-spacing: 2px;
   font-family: 'Alegreya Sans SC', sans-serif;
   padding-top: 20px;
+  z-index: 1;
 }
 
 
@@ -125,7 +126,7 @@ div.description {
   font-weight: 350;
   letter-spacing: 2px;
   font-family: 'Kanit', sans-serif;
-
+  z-index: 1;
 }
 
 #footer-menu,
@@ -136,7 +137,6 @@ div.description {
   font-weight: 700;
   letter-spacing: 2px;
   font-family: 'Kanit', sans-serif;
-  z-index: 1;
 }
 
 #instagram-icon {
