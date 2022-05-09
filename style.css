@@ -21,7 +21,7 @@ div.lol{
   justify-content: center;
   text-align: center;
   width: 200px;
-  height: 407px;
+  height: 530px;
   padding-top: 115px;
   padding-bottom: 45px;
 }
@@ -195,6 +195,7 @@ a:active {
 }
 
 .slidershow{
+  padding-top: 220px;
   width: 1050px;
   height: 600px;
   overflow: hidden;
