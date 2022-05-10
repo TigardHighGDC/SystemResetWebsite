@@ -54,7 +54,6 @@ div.our-peeps {
   z-index: 1;
 }
 
-
 div.team {
   display: flex;
   justify-content: center;
@@ -69,7 +68,8 @@ div.team {
   border: 2px solid #71ABD1;
   height: 70%;
   width: 70%;
-  border-radius: 10%
+  border-radius: 10%;
+  box-shadow: 0 0 20px #eee;
 }
 
 div.description {
@@ -91,7 +91,6 @@ div.description {
 }
 
 #description {
-  z-index: 1;
   color: #71ABD1;
   font-size: 20px;
   font-weight: 350;
@@ -101,6 +100,7 @@ div.description {
   padding-bottom: 45px;
   padding-right: 7.5%;
   padding-left: 7.5%;
+  z-index: 1;
 }
 
 .footer {
@@ -141,15 +141,15 @@ div.description {
   font-family: 'Kanit', sans-serif;
 }
 
-
 .caption {
   display: block;
   color: #71ABD1;
-  font-size: 20px;
+  font-size: 25px;
   font-weight: 350;
   letter-spacing: .5px;
   font-family: 'Hind Vadodara', sans-serif;
   text-align: center;
+  z-index: 1;
 }
 
 a:link {
