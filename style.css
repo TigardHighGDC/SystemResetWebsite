@@ -75,8 +75,6 @@ div.team {
 div.description {
   justify-content: center;
   margin: auto;
-  border-top: 1px solid #9B47EF;
-  border-bottom: 1px solid #9B47EF;
 }
 
 #our-game {
