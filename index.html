@@ -18,6 +18,12 @@
         display: none;
       }
     }
+
+    @media (min-width: 767px) {
+      .hidden-desktop {
+        display: none;
+      }
+    }
   </style>
 
 </head>
@@ -141,6 +147,7 @@ and for individuals getting contacts i think we can do that in the about me page
       <h1 id='our-peeps'>OUR TEAM</h1>
     </div>
 
+    <div class="hidden-mobile">
   <div class="parent">
     <div class="div1" id='our-peeps'> WEB DEVELOPERS </div>
     <div class="div2"> 
@@ -194,7 +201,67 @@ and for individuals getting contacts i think we can do that in the about me page
         <span class='caption'>Ethan</a></span>
       </div>
     </div>
+
     </div>
+    </div>
+
+    <div class="hidden-desktop">
+      <div class="mparent">
+        <div class="mdiv1" id='our-peeps'> WEB DEVELOPERS </div>
+        <div class="mdiv2"> 
+          <div class='member'>
+            <a href='/profiles/james.html'>
+            <img src='/profiles/jamesHeadshot.jpg' alt='James' id='team-member'/>
+            <span class='caption'>James</a> </span>
+          </div>
+        </div>
+        <div class="mdiv3"> 
+          <div class='member'>
+            <a href='/profiles/street.html'>
+            <img src='/profiles/streetHeadshot.jpg' alt='Street' id='team-member'/>
+            <span class='caption'>Street</a></span>
+          </div>
+        </div>
+        <div class="mdiv4" id='our-peeps'> PROGRAMMERS </div>
+        <div class="mdiv5"> 
+          <div class='member'>
+            <a href='/profiles/jake.html'>
+            <img src='/profiles/jakeHeadshot.jpg' alt='Jake' id='team-member'/>
+            <span class='caption'>Jake</a></span>
+          </div>
+        </div>
+        <div class="mdiv6"> 
+          <div class='member'>
+            <a href='/profiles/brandonPacewic.html'>
+            <img src='/profiles/brandonHeadshot.jpg' alt='Brandon' id='team-member'/>
+            <span class='caption'>Brandon</a></span>
+          </div>
+        </div>
+        <div class="mdiv7"> 
+          <div class='member'>
+            <a href='/profiles/nathan.html'>
+            <img src='/profiles/nathanHeadshot.jpg' alt='Nathan' id='team-member'/>
+            <span class='caption'>Nathan</a></span>
+          </div>
+        </div>
+        <div class="mdiv8" id='our-peeps'> ARTISTS</div>
+        <div class="mdiv9"> 
+          <div class='member'>
+            <a href='/profiles/kaia.html'>
+            <img src='/profiles/kaiaHeadshot.jpg' alt='Kaia' id='team-member'/>
+            <span class='caption'>Kaia</a></span>
+          </div>
+        </div>
+        <div class="mdiv10"> 
+          <div class='member'>
+            <a href='/profiles/nisaycs.html'>
+            <img src='/profiles/nisaycsHeadshot.jpg' alt='Ethan' id='team-member'/>
+            <span class='caption'>Ethan</a></span>
+          </div>
+        </div>
+    
+        </div>
+        </div>
     
   <footer class='footer'>
     <div id='footer-container' class='flex-row'>
@@ -217,12 +284,13 @@ and for individuals getting contacts i think we can do that in the about me page
       </div>
     </div>
 
+    <div class="hidden-mobile">
+      <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+        <script src="./darkModeScript.js"></script>
+      </div>
+
   </footer>
   
- <div class="hidden-mobile">
-  <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
-    <script src="./darkModeScript.js"></script>
-  </div>
     
 </body>  
 </html>

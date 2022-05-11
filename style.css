@@ -333,6 +333,29 @@ input[name="r"]{
   .div10 { grid-area: 3 / 3 / 4 / 4; }
 
 
+  .mparent {
+    display: grid;
+grid-template-columns: 2fr;
+grid-template-rows: .25fr repeat(2, 1fr) .25fr repeat(3, 1fr) .25fr repeat(2, 1fr);
+grid-column-gap: 20px;
+grid-row-gap: 20px;
+justify-items: stretch;
+  align-items: stretch;
+  text-align: center;
+
+    }
+  
+  .mdiv1 { grid-area: 1 / 1 / 2 / 2; }
+  .mdiv2 { grid-area: 2 / 1 / 3 / 2; }
+.mdiv3 { grid-area: 3 / 1 / 4 / 2; }
+.mdiv4 { grid-area: 4 / 1 / 5 / 2; }
+.mdiv5 { grid-area: 5 / 1 / 6 / 2; }
+.mdiv6 { grid-area: 6 / 1 / 7 / 2; }
+.mdiv7 { grid-area: 7 / 1 / 8 / 2; }
+.mdiv8 { grid-area: 8 / 1 / 9 / 2; }
+.mdiv9 { grid-area: 9 / 1 / 10 / 2; }
+.mdiv10 { grid-area: 10 / 1 / 11 / 2; }
+
   .show-on-desktop{
     display: block;
 }
