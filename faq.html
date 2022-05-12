@@ -17,14 +17,64 @@
 	</header>
 	<div class='description'>
 		<h1 id='our-game'>FREQUENTLY ASKED QUESTIONS</h1>
-		<p id='description'>
-			Q: What race are you playing as? <br> <br> A: Human <br><br><br><br> 
-      Q: What weapons do you use? <br><br> A: UNKOWN <br><br><br><br> 
-      Q: How do you get weapons? <br><br> A: UNKNOWN <br><br><br><br> 
-      Q: What platforms will this be available on? <br><br> A: PC, you can also play on the web! <br><br><br><br> 
-      Q: Is this game singleplayer or multiplayer? <br><br> A: Singplayer <br><br><br><br> 
-    </p>
   </div>
+
+  <button type="button" class="collapsible">Q: What race are you playing as?</button>
+<div class="collapContent">
+  <p>A: Human</p>
+</div>
+
+<button type="button" class="collapsible">Q: What makes this game unique?</button>
+<div class="collapContent">
+  <p>A: Magic systems, movement system, and enemies!</p>
+</div>
+
+<button type="button" class="collapsible">Q: What inspired this game?</button>
+<div class="collapContent">
+  <p>A: The Roguelite genre!</p>
+</div>
+
+<button type="button" class="collapsible">Q: What weapons do you use?</button>
+<div class="collapContent">
+  <p>A: The Watermelon Machine Gun</p>
+</div>
+
+<button type="button" class="collapsible">Q: How do you get weapons?</button>
+<div class="collapContent">
+  <p>A: You can unlock weapons by defeating bosses & mini bosses!</p>
+</div>
+
+<button type="button" class="collapsible"> Q: What platforms will this be available on?</button>
+<div class="collapContent">
+  <p>A: PC, you can also play on the web!</p>
+</div>
+
+<button type="button" class="collapsible">Q: Is this game singleplayer or multiplayer?</button>
+<div class="collapContent">
+  <p>A: Singleplayer</p>
+</div>
+
+<button type="button" class="collapsible">Q: How do you win?</button>
+<div class="collapContent">
+  <p>A: GET GOOD.</p>
+</div>
+
+<script>
+  var coll = document.getElementsByClassName("collapsible");
+  var i;
+  
+  for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var content = this.nextElementSibling;
+      if (content.style.display === "block") {
+        content.style.display = "none";
+      } else {
+        content.style.display = "block";
+      }
+    });
+  }
+  </script>
   
   <footer class='footer'>
     <div id='footer-container' class='flex-row'>

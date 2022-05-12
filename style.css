@@ -459,3 +459,48 @@ justify-items: stretch;
   from {opacity: .4}
   to {opacity: 1}
 }
+
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+  background-color: #E1DEDB;
+  color: #71ABD1;
+  cursor: pointer;
+  padding: 60px 20% 10px 20%;
+  width: 100%;
+  border: none;
+  outline: none;
+  color: #71ABD1;
+  font-size: 20px;
+  font-weight: 350;
+  letter-spacing: 2px;
+  font-family: 'Hind Vadodara', sans-serif;
+  text-align: center;
+  padding-bottom: 45px;
+  padding-right: 7.5%;
+  padding-left: 7.5%;
+  z-index: 1;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .collapsible:hover {
+  background-color: #ccc;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.collapContent {
+  padding-left: 20%;
+  padding-right: 20%;
+  color: #DE90C5;
+  display: none;
+  overflow: hidden;
+  background-color: #E1DEDB;
+  font-size: 20px;
+  font-weight: 350;
+  letter-spacing: 2px;
+  font-family: 'Hind Vadodara', sans-serif;
+  text-align: center;
+  padding-bottom: 45px;
+  padding-right: 7.5%;
+  padding-left: 7.5%;
+  z-index: 1;
+}
