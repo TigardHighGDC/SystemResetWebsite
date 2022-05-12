@@ -8,6 +8,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+  
+ <style>   @media (max-width: 767px) {
+  .hidden-mobile {
+    display: none;
+  }
+}
+
+@media (min-width: 767px) {
+  .hidden-desktop {
+    display: none;
+  }
+}</style>
+  
   </head>
   <body>
       <body>
@@ -40,9 +53,21 @@
       <div class = "about-right">
         <h1>Hello<span>!</span></h1>
         <h2>Here's who I am & what I do</h2>
-        <div class = "about-btns">
-          <a href="https://docs.google.com/document/d/17KDoHhh4vdJyR0A74twLAm4nSbAMtjkuXKmgELwCkVA/edit?usp=sharing" target="_blank"><button type = "button" class = "btn btn-pink">resume / CV</button></a>
-          <a href="https://github.com/JakeSmig" target="_blank"><button type = "button" class = "btn btn-white">Git hub</button></a>
+
+        <div class="hidden-desktop">
+          <div class = "about-btns">
+            <a href="https://docs.google.com/document/d/17KDoHhh4vdJyR0A74twLAm4nSbAMtjkuXKmgELwCkVA/edit?usp=sharing" target="_blank"><button type = "button" class = "btn btn-pink">resume / CV</button></a>
+          </div>
+          <div class = "about-btns">
+            <a href="https://github.com/JakeSmig" target="_blank"><button type = "button" class = "btn btn-white">Git hub</button></a>
+          </div>
+        </div>
+  
+        <div class="hidden-mobile">
+          <div class = "about-btns">
+            <a href="https://docs.google.com/document/d/17KDoHhh4vdJyR0A74twLAm4nSbAMtjkuXKmgELwCkVA/edit?usp=sharing" target="_blank"><button type = "button" class = "btn btn-pink">resume / CV</button></a>
+            <a href="https://github.com/JakeSmig" target="_blank"><button type = "button" class = "btn btn-white">Git hub</button></a>
+          </div>
         </div>
 
         <div class = "about-para">
