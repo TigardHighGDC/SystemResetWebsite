@@ -154,6 +154,17 @@ div.description {
 .caption {
   display: block;
   color: #71ABD1;
+  font-size: 25px;
+  font-weight: 350;
+  letter-spacing: .5px;
+  font-family: 'Hind Vadodara', sans-serif;
+  text-align: center;
+  z-index: 1;
+}
+
+.imgCaption {
+  display: block;
+  color: #71ABD1;
   background-color: white;
   font-size: 25px;
   font-weight: 350;
