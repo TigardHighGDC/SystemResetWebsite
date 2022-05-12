@@ -1,6 +1,6 @@
-# Welcome to the System Reset Website!
+# 💾 Welcome to the System Reset Website! 💾
 
-This is the OGPC 2022 Website from ANSTAAFL represeting THS. The website was developed by [@gitJamoo](https://github.com/gitJamoo) and [@Sluggggg](https://github.com/Sluggggg). The website will not be supported unless the game gains attraction. 
+This is the OGPC 2022 Website from ANSTAAFL represeting Tigard High School🟩⬛. The website was developed by [@gitJamoo](https://github.com/gitJamoo) and [@Sluggggg](https://github.com/Sluggggg). The website will not be supported unless the game gains attraction. 
 
 The goal of this website was to provide information on the team and provide information on the game, System Reset, in a website.
 
